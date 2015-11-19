@@ -50,6 +50,16 @@ The generated screenshots and logs are saved on device.
 | -e launch-timeout [millisecond] | timeout millisecond for launching app package, default 5000 |
 | -e waitidle-timeout [millisecond] | timeout millisecond for wait app idle, default 100 |
 
+## FAQ
+
+#### How AppCrawler works?
+
+* Basically, it use Depth-First-Search (DFS) algorithm to inspect screen's view hierarchy, find testable Views on screen (Clickable, Scrollable, EditText, ...), performance test in turn, and check screen changes repeatedly.
+
+#### How it compare with android Monkey?
+
+* Monkey test is based on random strategy, may not able to go every screen in a short time, can spend too much time on trivial screens.
+* Monkey test generates too many events, it is hard to replay test steps by human for bug reproduction.
 
 ## Author
 
