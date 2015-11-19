@@ -50,6 +50,11 @@ The generated screenshots and logs are saved on device.
 | -e launch-timeout [millisecond] | timeout millisecond for launching app package, default 5000 |
 | -e waitidle-timeout [millisecond] | timeout millisecond for wait app idle, default 100 |
 
+
+## Download
+
+* [v1.0.0.0](https://github.com/Eaway/AppCrawler/releases/download/v1.0.0.0/AppCrawler_v1.0.0.0.zip)
+
 ## FAQ
 
 #### How AppCrawler works?
