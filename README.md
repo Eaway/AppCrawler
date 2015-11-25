@@ -3,16 +3,16 @@
 Android App UI Crawler using UiAutomator
 
 AppCrawler is an automatic UI testing tool based on android UIAutomator.
-It tries to traverse through the app, analyzes each screen, take screenshot and perform test on testable views/widgets.
+It tries to traverse through the app, analyzes each screen, take screenshot and perform test on testable UI components.
 This is handy in case of smoke test and compatibility testing across different devices.
 It is also a convenient screenshot tool for GUI review, marketing reference, etc.
 
 ## Features
 
-* Easy to use as monkey, No need of writing test script and target app source code.
+* Easy to use as monkey, No need of writing test script and source code of target app.
 * Able to detect ANR/Crash with human reproducible steps log (compare with monkey).
 * Screen-based CPU/Memory performance log.
-* Can handle common system popups (android, 3rd party)
+* Can handle common system/3rd-party popups.
 * Configuration options, such as setting the number of events to attempt.
 
 ## Limitations
@@ -51,10 +51,6 @@ The generated screenshots and logs are saved on device.
 | -e waitidle-timeout [millisecond] | timeout millisecond for wait app idle, default 100 |
 
 
-## Download
-
-* [v1.0.0.0](https://github.com/Eaway/AppCrawler/releases/download/v1.0.0.0/AppCrawler_v1.0.0.0.zip)
-
 ## FAQ
 
 #### How AppCrawler works?
@@ -65,6 +61,29 @@ The generated screenshots and logs are saved on device.
 
 * Monkey test is based on random strategy, may not able to go every screen in a short time, can spend too much time on trivial screens.
 * Monkey test generates too many events, it is hard to replay test steps by human for bug reproduction.
+
+
+## Next Actions
+
+* Support more user input events: long-click, scroll, gesture, etc.
+* Support more system events: Screen orientation, Language, Wireless, Power/Volume keys, etc.
+* Heuristic algorithm to enhance UI coverage.
+* Extensibility: Logon support.
+
+## Reference
+
+A GUI Crawling-based technique for Android Mobile Application Testing
+http://www.cs.umd.edu/~atif/testbeds/TESTBEDS2011-papers/Amalfitano.pdf
+
+Guided GUI Testing of Android Apps with Minimal Restart and Approximate Learning
+http://www.cs.berkeley.edu/~necula/Papers/swifthand-oopsla13.pdf
+
+SuperMonkey
+https://github.com/testobject/supermonkey
+
+## Release
+
+* [v1.0.0.0](https://github.com/Eaway/AppCrawler/releases/tag/v1.0.0.0)
 
 ## Author
 
