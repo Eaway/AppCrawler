@@ -12,7 +12,7 @@ It is also a convenient screenshot tool for GUI review, marketing reference, etc
 * Easy to use as monkey, No need of writing test script and source code of target app.
 * Able to detect ANR/Crash with human reproducible steps log (compare with monkey).
 * Screen-based CPU/Memory performance log.
-* Can handle common system/3rd-party popups.
+* Can handle(dismiss) common system/3rd-party popups during the test.
 * Configuration options, such as setting the number of events to attempt.
 
 ## Limitations
